@@ -1,0 +1,178 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Outlaw : NPC
+{
+    public State currentState = State.Patroul;
+    public LayerMask enemyLayers;
+    public List<Transform> detectedEnemies = new List<Transform>(); // List to store detected enemies
+    public Transform currentTarget;
+    public float detectionRange = 20f;
+
+    public float sixthSense = 40f;
+    public float AggressionRange = 10f;
+    [Header("Timers")]
+    public float PerfomanceMaxTime = 1.0f;
+    float perfomanceTimer;
+    public float AssumingTime = 2f;
+    float AssumingTimer;
+
+    public float fieldOfView = 90f;
+    public float rotationSpeed = 100f;
+
+    public enum State
+    {
+        Patroul,
+        Search,
+        Combat
+    }
+
+    public virtual void Update()
+    {
+        perfomanceTimer -= Time.deltaTime;
+        if (perfomanceTimer <= 0) // For optimization
+        {
+            DetectEnemies();
+            if (currentState == State.Combat)
+            {
+                SelectTarget();
+
+            }
+            perfomanceTimer = PerfomanceMaxTime;
+        }
+        if (currentState == State.Combat)
+        {
+            if (currentTarget != null)
+            {
+                Aim();
+            }
+        }
+        switch (currentState)
+        {
+            case State.Patroul:
+                HandlePatroulState();
+                break;
+            case State.Search:
+                HandleSearchState();
+                break;
+            case State.Combat:
+                HandleCombatState();
+                break;
+            default:
+                // Handle default behavior or error state
+                break;
+        }
+    }
+
+    public virtual void HandlePatroulState()
+    {
+        // Example condition to switch to Chase state
+        if (CanSeeTheEnemy())
+        {
+            currentState = State.Combat;
+        }
+    }
+
+    public virtual void HandleSearchState()
+    {
+        Debug.Log("Searching");
+        if (CanSeeTheEnemy())
+        {
+            currentState = State.Combat;
+        }
+    }
+
+    public virtual void HandleCombatState()
+    {
+        // Example condition to switch back to Chase state
+        if (!CanSeeTheEnemy())
+        {
+            AssumingTimer -= Time.deltaTime;
+            if (AssumingTimer <= 0)
+            {
+                currentState = State.Search;
+                AssumingTimer = AssumingTime;
+            }          
+        }
+        else
+        {
+            AssumingTimer = AssumingTime;
+        }
+    }
+    public virtual bool CanSeeTheEnemy()
+    {
+        if (detectedEnemies.Count == 0) return false;
+
+        foreach (Transform enemy in detectedEnemies)
+        {
+            Vector2 direction = (enemy.position - transform.position).normalized;
+            float angle = Vector2.Angle(transform.up, direction);
+
+            if (angle >= -fieldOfView && angle <= fieldOfView)
+            {
+                RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, detectionRange, enemyLayers);
+                if (hit.collider != null && hit.transform == enemy)
+                {
+                    Debug.DrawRay(transform.position, direction * detectionRange, Color.red);
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    void DetectEnemies()
+    {
+        // Clear the list
+        detectedEnemies.Clear();
+
+        // to detect enemies
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, sixthSense, enemyLayers);
+        foreach (Collider2D collider in colliders)
+        {
+            // Add the detected enemy to the list
+            detectedEnemies.Add(collider.transform);
+            Debug.Log("New enemy found " + collider.name);
+        }
+    }
+
+    void SelectTarget()
+    {
+        if (detectedEnemies.Count > 0)
+        {
+            Transform bestTarget = null;
+            float closestDistance = sixthSense;
+
+            foreach (Transform enemy in detectedEnemies)
+            {
+                float distanceToEnemy = Vector2.Distance(transform.position, enemy.position);
+
+                if (distanceToEnemy < closestDistance) // compares distance of current cover, to previous one
+                {
+                    closestDistance = distanceToEnemy; // sets new closest distance
+                    bestTarget = enemy;
+                }
+            }
+
+            currentTarget = bestTarget;
+        }
+        else
+        {
+            currentTarget = null;
+        }
+    }
+    void Aim()
+    {
+        Vector2 direction = (currentTarget.position - transform.position).normalized;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;// adjusting rotation, I don't know why it's happenning
+        Quaternion targetRotation = Quaternion.Euler(new Vector3(0, 0, angle));
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+    }
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, AggressionRange);
+    }
+}
