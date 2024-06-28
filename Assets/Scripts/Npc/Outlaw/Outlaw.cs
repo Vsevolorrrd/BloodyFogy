@@ -255,7 +255,30 @@ public class Outlaw : NPC
 
         walkPoint = new Vector2(transform.position.x + randomX, transform.position.y + randomY);
     }
+    private void Search()
+    {
+        if (search)
+        {
+            LastPoint = currentTarget.position;
+            walkPointForSearching = LastPoint;
+            search = false;
+        }
+        transform.position = Vector2.MoveTowards(transform.position, walkPointForSearching, patrolSpeed * Time.deltaTime);
 
+        Vector2 direction = (walkPointForSearching - (Vector2)transform.position).normalized;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;// adjusting rotation by 90
+        Quaternion targetRotation = Quaternion.Euler(new Vector3(0, 0, angle));
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+
+        if (Vector2.Distance(transform.position, walkPoint) < 0.2f)
+        {
+            //Calculate random point in range
+            float randomY = Random.Range(-RandomWalkPoint, RandomWalkPoint);
+            float randomX = Random.Range(-RandomWalkPoint, RandomWalkPoint);
+
+            walkPointForSearching = new Vector2(LastPoint.x + randomX, LastPoint.y + randomY);
+        }
+    }
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
