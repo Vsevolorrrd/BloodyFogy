@@ -108,12 +108,12 @@ MonoBehaviour:
   gunpoint: {fileID: 3511593021153374259}
   objectsToHit:
     serializedVersion: 2
-    m_Bits: 7168
+    m_Bits: 32256
   anim: {fileID: 5339595854523701522}
   Automatic: 0
   damage: 100
   FireCooldown: 1.2
-  weaponRange: 20
+  weaponRange: 60
   muzzleFlash: {fileID: 2222959866606237226}
   GunSmoke: {fileID: 168437967085822208}
   Shot: {fileID: 5165930611189306559}
