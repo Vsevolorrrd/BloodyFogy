@@ -12,15 +12,28 @@ public class Outlaw : NPC
 
     public float sixthSense = 40f;
     public float AggressionRange = 10f;
+
     [Header("Timers")]
     public float PerfomanceMaxTime = 1.0f;
     float perfomanceTimer;
     public float AssumingTime = 2f;
     float AssumingTimer;
 
+    [Header("Patroiling")]
+    public Transform[] waypoints;
+    private int currentWaypoint = 0;
+    public float patrolSpeed = 2f;
+    public float RandomWalkPoint = 7f;
+    [HideInInspector] public Vector2 walkPoint;
+
     public float fieldOfView = 90f;
     public float rotationSpeed = 100f;
 
+    public virtual void Awake()
+    {
+        // to generate the first walk point
+        RandomPatroul();
+    }
     public enum State
     {
         Patroul,
@@ -72,6 +85,7 @@ public class Outlaw : NPC
         {
             currentState = State.Combat;
         }
+        Patrol();
     }
 
     public virtual void HandleSearchState()
@@ -169,6 +183,39 @@ public class Outlaw : NPC
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;// adjusting rotation, I don't know why it's happenning
         Quaternion targetRotation = Quaternion.Euler(new Vector3(0, 0, angle));
         transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+    }
+    public virtual void Patrol()
+    {
+        if (waypoints != null && waypoints.Length > 0)
+        {
+            Transform targetWaypoint = waypoints[currentWaypoint];
+            transform.position = Vector2.MoveTowards(transform.position, targetWaypoint.position, patrolSpeed * Time.deltaTime);
+
+            if (Vector2.Distance(transform.position, targetWaypoint.position) < 0.2f)
+            {
+                currentWaypoint++;
+                if (currentWaypoint >= waypoints.Length)
+                    currentWaypoint = 0;
+            }
+        }
+        else
+        {
+            transform.position = Vector2.MoveTowards(transform.position, walkPoint, patrolSpeed * Time.deltaTime);
+
+            if (Vector2.Distance(transform.position, walkPoint) < 0.2f)
+            {
+                RandomPatroul();
+            }
+        }
+
+    }
+    private void RandomPatroul()
+    {
+        //Calculate random point in range
+        float randomY = Random.Range(-RandomWalkPoint, RandomWalkPoint);
+        float randomX = Random.Range(-RandomWalkPoint, RandomWalkPoint);
+
+        walkPoint = new Vector2(transform.position.x + randomX, transform.position.y + randomY);
     }
     void OnDrawGizmosSelected()
     {

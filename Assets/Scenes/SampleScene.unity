@@ -268,6 +268,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7853586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7853587}
+  m_Layer: 0
+  m_Name: Patroulpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7853587
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7853586}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -20, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1950814177}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &19084567
 GameObject:
   m_ObjectHideFlags: 0
@@ -5249,6 +5280,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &63245717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 63245718}
+  m_Layer: 0
+  m_Name: Patroulpoint (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &63245718
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63245717}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1950814177}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &106233293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13244,6 +13306,12 @@ MonoBehaviour:
   AggressionRange: 10
   PerfomanceMaxTime: 1
   AssumingTime: 2
+  waypoints:
+  - {fileID: 7853587}
+  - {fileID: 63245718}
+  patrolSpeed: 2
+  RandomWalkPoint: 10
+  walkPoint: {x: 0, y: 0}
   fieldOfView: 90
   rotationSpeed: 100
   anim: {fileID: 1545095231}
@@ -27003,6 +27071,12 @@ MonoBehaviour:
   AggressionRange: 10
   PerfomanceMaxTime: 1
   AssumingTime: 2
+  waypoints:
+  - {fileID: 7853587}
+  - {fileID: 63245718}
+  patrolSpeed: 2
+  RandomWalkPoint: 10
+  walkPoint: {x: 0, y: 0}
   fieldOfView: 90
   rotationSpeed: 100
   anim: {fileID: 1891467642}
@@ -29795,7 +29869,7 @@ MonoBehaviour:
   currentState: 0
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   detectedEnemies: []
   currentTarget: {fileID: 0}
   detectionRange: 20
@@ -29803,6 +29877,12 @@ MonoBehaviour:
   AggressionRange: 10
   PerfomanceMaxTime: 1
   AssumingTime: 2
+  waypoints:
+  - {fileID: 7853587}
+  - {fileID: 63245718}
+  patrolSpeed: 2
+  RandomWalkPoint: 10
+  walkPoint: {x: 0, y: 0}
   fieldOfView: 90
   rotationSpeed: 100
   anim: {fileID: 1875955879}
@@ -30567,6 +30647,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945616185}
   m_CullTransparentMesh: 1
+--- !u!1 &1950814176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1950814177}
+  m_Layer: 0
+  m_Name: PatroulRoute
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1950814177
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950814176}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7853587}
+  - {fileID: 63245718}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1952190795
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36092,6 +36205,10 @@ MonoBehaviour:
   AggressionRange: 10
   PerfomanceMaxTime: 1
   AssumingTime: 3
+  waypoints: []
+  patrolSpeed: 2
+  RandomWalkPoint: 10
+  walkPoint: {x: 0, y: 0}
   fieldOfView: 90
   rotationSpeed: 100
   whatIsCover:
@@ -36562,6 +36679,12 @@ MonoBehaviour:
   AggressionRange: 10
   PerfomanceMaxTime: 1
   AssumingTime: 2
+  waypoints:
+  - {fileID: 7853587}
+  - {fileID: 63245718}
+  patrolSpeed: 2
+  RandomWalkPoint: 10
+  walkPoint: {x: 0, y: 0}
   fieldOfView: 90
   rotationSpeed: 100
   anim: {fileID: 1253103602}
@@ -36878,3 +37001,4 @@ SceneRoots:
   - {fileID: 1871339571}
   - {fileID: 1850488626}
   - {fileID: 142964835}
+  - {fileID: 1950814177}
