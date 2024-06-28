@@ -5,10 +5,11 @@ using UnityEngine;
 public class Outlaw : NPC
 {
     public State currentState = State.Patroul;
+    public LayerMask WhatToSee;
     public LayerMask enemyLayers;
     public List<Transform> detectedEnemies = new List<Transform>(); // List to store detected enemies
     public Transform currentTarget;
-    public float detectionRange = 20f;
+    public float detectionRange = 18f;
 
     public float sixthSense = 40f;
     public float AggressionRange = 10f;
@@ -18,6 +19,8 @@ public class Outlaw : NPC
     float perfomanceTimer;
     public float AssumingTime = 2f;
     float AssumingTimer;
+    public float SearchingTime = 10f;
+    float SearchingTimer;
 
     [Header("Patroiling")]
     public Transform[] waypoints;
@@ -26,6 +29,11 @@ public class Outlaw : NPC
     public float RandomWalkPoint = 7f;
     [HideInInspector] public Vector2 walkPoint;
 
+    [Header("Searching")]
+    [HideInInspector] public Vector2 LastPoint;
+    [HideInInspector] public Vector2 walkPointForSearching;
+    private bool search;
+
     public float fieldOfView = 90f;
     public float rotationSpeed = 100f;
 
@@ -33,6 +41,9 @@ public class Outlaw : NPC
     {
         // to generate the first walk point
         RandomPatroul();
+        SearchingTimer = SearchingTime;
+        AssumingTimer = AssumingTime;
+        search = true;
     }
     public enum State
     {
@@ -50,16 +61,8 @@ public class Outlaw : NPC
             if (currentState == State.Combat)
             {
                 SelectTarget();
-
             }
             perfomanceTimer = PerfomanceMaxTime;
-        }
-        if (currentState == State.Combat)
-        {
-            if (currentTarget != null)
-            {
-                Aim();
-            }
         }
         switch (currentState)
         {
@@ -90,10 +93,30 @@ public class Outlaw : NPC
 
     public virtual void HandleSearchState()
     {
-        Debug.Log("Searching");
-        if (CanSeeTheEnemy())
+        if (detectedEnemies.Count != 0)
         {
-            currentState = State.Combat;
+            Search();
+            Debug.Log("Searching");
+            if (!CanSeeTheEnemy())
+            {
+                SearchingTimer -= Time.deltaTime;
+                if (SearchingTimer <= 0)
+                {
+                    currentState = State.Patroul;
+                    SearchingTimer = SearchingTime;
+                    search = true;
+                }
+            }
+            else
+            {
+                SearchingTimer = SearchingTime;
+                currentState = State.Combat;
+                search = true;
+            }
+        }
+        else
+        {
+            currentState = State.Patroul;
         }
     }
 
@@ -113,6 +136,11 @@ public class Outlaw : NPC
         {
             AssumingTimer = AssumingTime;
         }
+
+        if (currentTarget != null)
+        {
+            Aim();
+        }
     }
     public virtual bool CanSeeTheEnemy()
     {
@@ -125,7 +153,7 @@ public class Outlaw : NPC
 
             if (angle >= -fieldOfView && angle <= fieldOfView)
             {
-                RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, detectionRange, enemyLayers);
+                RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, detectionRange, WhatToSee);
                 if (hit.collider != null && hit.transform == enemy)
                 {
                     Debug.DrawRay(transform.position, direction * detectionRange, Color.red);
@@ -180,7 +208,7 @@ public class Outlaw : NPC
     void Aim()
     {
         Vector2 direction = (currentTarget.position - transform.position).normalized;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;// adjusting rotation, I don't know why it's happenning
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;// adjusting rotation by 90
         Quaternion targetRotation = Quaternion.Euler(new Vector3(0, 0, angle));
         transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
@@ -190,6 +218,11 @@ public class Outlaw : NPC
         {
             Transform targetWaypoint = waypoints[currentWaypoint];
             transform.position = Vector2.MoveTowards(transform.position, targetWaypoint.position, patrolSpeed * Time.deltaTime);
+
+            Vector2 direction = (targetWaypoint.position - transform.position).normalized;
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;// adjusting rotation by 90
+            Quaternion targetRotation = Quaternion.Euler(new Vector3(0, 0, angle));
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
             if (Vector2.Distance(transform.position, targetWaypoint.position) < 0.2f)
             {
@@ -201,6 +234,11 @@ public class Outlaw : NPC
         else
         {
             transform.position = Vector2.MoveTowards(transform.position, walkPoint, patrolSpeed * Time.deltaTime);
+
+            Vector2 direction = (walkPoint - (Vector2)transform.position).normalized;
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;// adjusting rotation by 90
+            Quaternion targetRotation = Quaternion.Euler(new Vector3(0, 0, angle));
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
             if (Vector2.Distance(transform.position, walkPoint) < 0.2f)
             {
@@ -217,9 +255,12 @@ public class Outlaw : NPC
 
         walkPoint = new Vector2(transform.position.x + randomX, transform.position.y + randomY);
     }
+
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, AggressionRange);
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position, detectionRange);
     }
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4755326613944791899}
   - component: {fileID: 6029891182884927346}
   - component: {fileID: 8466007660319509381}
-  m_Layer: 15
+  m_Layer: 3
   m_Name: RifleBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,9 +104,6 @@ MonoBehaviour:
   time: 0.5
   rb: {fileID: 8466007660319509381}
   impactEffects: {fileID: 0}
-  objectsToHit:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!58 &6029891182884927346
 CircleCollider2D:
   m_ObjectHideFlags: 0

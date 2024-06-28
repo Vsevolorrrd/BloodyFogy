@@ -108,7 +108,7 @@ MonoBehaviour:
   gunpoint: {fileID: 3511593021153374259}
   objectsToHit:
     serializedVersion: 2
-    m_Bits: 1088
+    m_Bits: 7168
   anim: {fileID: 5339595854523701522}
   Automatic: 0
   damage: 100
@@ -260,7 +260,7 @@ Transform:
   m_GameObject: {fileID: 7413650166819510083}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.04, y: 2.21, z: 0}
+  m_LocalPosition: {x: -1, y: 2.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

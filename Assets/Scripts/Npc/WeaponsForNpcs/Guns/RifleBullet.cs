@@ -10,7 +10,6 @@ public class RifleBullet : MonoBehaviour
     public float time = 1f;
     public Rigidbody2D rb;
     public GameObject impactEffects;
-    public LayerMask objectsToHit;
 
     // Start is called before the first frame update
     void Start()
