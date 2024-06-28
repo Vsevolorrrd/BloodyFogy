@@ -8,6 +8,10 @@ public class EnemyHealth : MonoBehaviour
     public float currentHp;
     public ParticleSystem blood;
     public GameObject Remains;
+
+    [Header("Audio")]
+    public AudioSource Hit;
+    public AudioClip hit;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +20,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void DamageAi(float damage)
     {
+        Hit.PlayOneShot(hit);
         currentHp -= damage;
         if (currentHp <= 0)
         {
