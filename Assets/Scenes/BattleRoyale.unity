@@ -6384,7 +6384,7 @@ MonoBehaviour:
     m_Bits: 6656
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 10240
+    m_Bits: 22528
   detectedEnemies: []
   currentTarget: {fileID: 0}
   detectionRange: 20
@@ -18137,7 +18137,7 @@ MonoBehaviour:
     m_Bits: 6656
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 10240
+    m_Bits: 22528
   detectedEnemies: []
   currentTarget: {fileID: 0}
   detectionRange: 20
@@ -18483,7 +18483,7 @@ MonoBehaviour:
     m_Bits: 6656
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 10240
+    m_Bits: 22528
   detectedEnemies: []
   currentTarget: {fileID: 0}
   detectionRange: 20
@@ -53644,7 +53644,7 @@ MonoBehaviour:
     m_Bits: 6656
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 10240
+    m_Bits: 22528
   detectedEnemies: []
   currentTarget: {fileID: 0}
   detectionRange: 20
@@ -142518,7 +142518,7 @@ MonoBehaviour:
     m_Bits: 6656
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 10240
+    m_Bits: 22528
   detectedEnemies: []
   currentTarget: {fileID: 0}
   detectionRange: 20
