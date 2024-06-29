@@ -12,6 +12,9 @@ public class Outlaw : NPC
     public float sixthSense = 40f;
     public float AggressionRange = 10f;
 
+    [Header("Need to see?")]// For optimization
+    public bool needToSee;
+
     [Header("Timers")]
     public float PerfomanceMaxTime = 1.0f;
     float perfomanceTimer;
@@ -94,7 +97,6 @@ public class Outlaw : NPC
         if (detectedEnemies.Count != 0)
         {
             Search();
-            Debug.Log("Searching");
             if (!CanSeeTheEnemy())
             {
                 SearchingTimer -= Time.deltaTime;
@@ -142,6 +144,7 @@ public class Outlaw : NPC
     }
     public virtual bool CanSeeTheEnemy()
     {
+        if (needToSee) return true;
         if (detectedEnemies.Count == 0) return false;
 
         foreach (Transform enemy in detectedEnemies)
@@ -174,34 +177,32 @@ public class Outlaw : NPC
         {
             // Add the detected enemy to the list
             detectedEnemies.Add(collider.transform);
-            Debug.Log("New enemy found " + collider.name);
         }
     }
 
     void SelectTarget()
     {
-        if (detectedEnemies.Count > 0)
-        {
-            Transform bestTarget = null;
-            float closestDistance = sixthSense;
-
-            foreach (Transform enemy in detectedEnemies)
-            {
-                float distanceToEnemy = Vector2.Distance(transform.position, enemy.position);
-
-                if (distanceToEnemy < closestDistance) // compares distance of current cover, to previous one
-                {
-                    closestDistance = distanceToEnemy; // sets new closest distance
-                    bestTarget = enemy;
-                }
-            }
-
-            currentTarget = bestTarget;
-        }
-        else
+        if (detectedEnemies.Count == 0)
         {
             currentTarget = null;
+            return;
         }
+
+        Transform bestTarget = null;
+        float closestDistance = Mathf.Infinity;
+
+        foreach (Transform enemy in detectedEnemies)
+        {
+            float distance = (enemy.position - transform.position).sqrMagnitude;// Use squared distances for optimisation
+
+            if (distance < closestDistance)
+            {
+                closestDistance = distance;
+                bestTarget = enemy;
+            }
+        }
+
+        currentTarget = bestTarget;
     }
     void Aim()
     {
