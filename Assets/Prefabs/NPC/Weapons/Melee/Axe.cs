@@ -5,11 +5,11 @@ using UnityEngine;
 public class Axe : MonoBehaviour
 {
     public float damage = 40f;
-    public LayerMask Enemy;
-    // Update is called once per frame
+    public GameObject owner;  // Reference to the owner of the weapon
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == Enemy)
+        // no more self killing
+        if (collision.gameObject != owner)
         {
             if (collision.gameObject.tag == "Player")
             {

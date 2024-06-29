@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4499795664868640913}
   - component: {fileID: 4729517401206301728}
+  - component: {fileID: 1164178098639277875}
   - component: {fileID: 2041079174155952042}
   - component: {fileID: 796189154416483252}
   - component: {fileID: 5594353316627339938}
@@ -174,6 +175,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1164178098639277875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2905914768013719327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0fbf2b3eab6f547922ede8da5585cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc: {fileID: 796189154416483252}
+  Outlaw: 0
+  Repablic: 0
+  KaiserReich: 0
+  Commonwealth: 0
+  AliedToPlayer: 0
 --- !u!58 &2041079174155952042
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -225,6 +244,12 @@ MonoBehaviour:
   Neutral: 0
   Allied: 0
   opinion: 0
+  WhatToSee:
+    serializedVersion: 2
+    m_Bits: 30208
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 29696
   currentOpinionState: 2
   currentState: 0
   WhatToSee:

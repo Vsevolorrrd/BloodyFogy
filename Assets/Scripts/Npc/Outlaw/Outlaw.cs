@@ -5,8 +5,6 @@ using UnityEngine;
 public class Outlaw : NPC
 {
     public State currentState = State.Patroul;
-    public LayerMask WhatToSee;
-    public LayerMask enemyLayers;
     public List<Transform> detectedEnemies = new List<Transform>(); // List to store detected enemies
     public Transform currentTarget;
     public float detectionRange = 18f;

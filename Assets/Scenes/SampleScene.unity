@@ -2447,6 +2447,10 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 2125844850}
+    - target: {fileID: 1164178098639277875, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: Outlaw
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2905914768013719327, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
       propertyPath: m_Name
       value: Ranged (1)
@@ -2930,6 +2934,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 415005599}
+    - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: Outlaw
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: patrolSpeed
       value: 2
@@ -6251,6 +6259,10 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 2125844850}
+    - target: {fileID: 1164178098639277875, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: Outlaw
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2905914768013719327, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
       propertyPath: m_Name
       value: Ranged
@@ -6757,6 +6769,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 415005599}
+    - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: Outlaw
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: patrolSpeed
       value: 2
@@ -6963,6 +6979,14 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 415005599}
+    - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: KaiserReich
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: AliedToPlayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6671032539158223785, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Enemy.m_Bits
       value: 22528
@@ -7730,6 +7754,14 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[2]
       value: 
       objectReference: {fileID: 951489922}
+    - target: {fileID: 1164178098639277875, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: KaiserReich
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164178098639277875, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: AliedToPlayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1661328454331329677, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -7994,6 +8026,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 415005599}
+    - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: Outlaw
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: patrolSpeed
       value: 2
@@ -8400,6 +8436,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 415005599}
+    - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: Outlaw
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: patrolSpeed
       value: 2
@@ -8851,6 +8891,14 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 415005599}
+    - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: KaiserReich
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: AliedToPlayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6671032539158223785, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Enemy.m_Bits
       value: 22528

@@ -4,6 +4,8 @@ public class NPC : MonoBehaviour
 {
     public bool Hostile, Neutral, Allied;
     public float opinion;
+    public LayerMask WhatToSee;
+    public LayerMask enemyLayers;
 
     public OpinionState currentOpinionState = OpinionState.Neutral;
 
