@@ -326,6 +326,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Outlaw
       value: 1
@@ -337,6 +341,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -478,8 +490,16 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Repablic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: Republic
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
@@ -497,6 +517,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -823,8 +851,16 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Repablic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: Republic
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
@@ -846,6 +882,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -1145,6 +1189,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: KaiserReich
       value: 1
@@ -1160,6 +1208,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -1264,8 +1320,16 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Repablic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: Republic
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
@@ -1283,6 +1347,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -1387,8 +1459,16 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Repablic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: Republic
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
@@ -1406,6 +1486,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -1582,6 +1670,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Outlaw
       value: 1
@@ -1593,6 +1685,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -1697,6 +1797,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: KaiserReich
       value: 0
@@ -1720,6 +1824,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -1751,6 +1863,14 @@ PrefabInstance:
     - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: patrolSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -1814,6 +1934,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5594353316627339938, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
       propertyPath: Hit
+      value: 
+      objectReference: {fileID: 1912141385}
+    - target: {fileID: 5594353316627339938, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: audioSource
       value: 
       objectReference: {fileID: 1912141385}
     - target: {fileID: 7455111500680317384, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
@@ -1919,8 +2043,16 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Repablic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: Republic
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
@@ -1938,6 +2070,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -2114,6 +2254,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Outlaw
       value: 1
@@ -2125,6 +2269,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -2234,6 +2386,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: KaiserReich
       value: 0
@@ -2253,6 +2409,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -2357,8 +2521,16 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Repablic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: Republic
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
@@ -2376,6 +2548,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -2652,6 +2832,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: KaiserReich
       value: 1
@@ -2667,6 +2851,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -2867,6 +3059,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Outlaw
       value: 1
@@ -2878,6 +3074,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -3143,6 +3347,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: KaiserReich
       value: 1
@@ -3158,6 +3366,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -3314,6 +3530,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Outlaw
       value: 1
@@ -3325,6 +3545,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -3352,6 +3580,14 @@ PrefabInstance:
     - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: patrolSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -3423,6 +3659,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5594353316627339938, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
       propertyPath: Hit
+      value: 
+      objectReference: {fileID: 1912141385}
+    - target: {fileID: 5594353316627339938, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: audioSource
       value: 
       objectReference: {fileID: 1912141385}
     m_RemovedComponents:
@@ -3524,6 +3764,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: KaiserReich
       value: 0
@@ -3543,6 +3787,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -3647,8 +3899,16 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Repablic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: Republic
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
@@ -3666,6 +3926,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -3926,8 +4194,16 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Repablic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: Republic
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
@@ -3945,6 +4221,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -4117,6 +4401,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Outlaw
       value: 1
@@ -4128,6 +4416,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -4288,6 +4584,14 @@ PrefabInstance:
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: patrolSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
       objectReference: {fileID: 78298937}
@@ -4357,6 +4661,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5594353316627339938, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
       propertyPath: Hit
+      value: 
+      objectReference: {fileID: 1912141385}
+    - target: {fileID: 5594353316627339938, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: audioSource
       value: 
       objectReference: {fileID: 1912141385}
     m_RemovedComponents:
@@ -4471,6 +4779,14 @@ PrefabInstance:
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: patrolSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
       objectReference: {fileID: 78298937}
@@ -4548,6 +4864,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5594353316627339938, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
       propertyPath: Hit
+      value: 
+      objectReference: {fileID: 1912141385}
+    - target: {fileID: 5594353316627339938, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: audioSource
       value: 
       objectReference: {fileID: 1912141385}
     - target: {fileID: 7455111500680317384, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
@@ -4641,6 +4961,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: KaiserReich
       value: 1
@@ -4656,6 +4980,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -4748,6 +5080,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: KaiserReich
       value: 1
@@ -4763,6 +5099,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -5027,6 +5371,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Outlaw
       value: 1
@@ -5038,6 +5386,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -5329,6 +5685,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: KaiserReich
       value: 1
@@ -5344,6 +5704,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -5448,8 +5816,16 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Repablic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: Republic
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
@@ -5467,6 +5843,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -5492,11 +5876,23 @@ PrefabInstance:
     m_TransformParent: {fileID: 1940893542}
     m_Modifications:
     - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: patrolSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
       objectReference: {fileID: 78298937}
     - target: {fileID: 1164178098639277875, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
       propertyPath: Repablic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164178098639277875, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: Republic
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1164178098639277875, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
@@ -5569,6 +5965,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5594353316627339938, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
       propertyPath: Hit
+      value: 
+      objectReference: {fileID: 1912141385}
+    - target: {fileID: 5594353316627339938, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: audioSource
       value: 
       objectReference: {fileID: 1912141385}
     - target: {fileID: 7455111500680317384, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
@@ -5674,6 +6074,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: KaiserReich
       value: 0
@@ -5693,6 +6097,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -5720,6 +6132,14 @@ PrefabInstance:
     - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: patrolSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -5799,6 +6219,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5594353316627339938, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
       propertyPath: Hit
+      value: 
+      objectReference: {fileID: 1912141385}
+    - target: {fileID: 5594353316627339938, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: audioSource
       value: 
       objectReference: {fileID: 1912141385}
     - target: {fileID: 7455111500680317384, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
@@ -5888,6 +6312,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Outlaw
       value: 1
@@ -5899,6 +6327,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -6079,6 +6515,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: KaiserReich
       value: 1
@@ -6094,6 +6534,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -6182,6 +6630,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Outlaw
       value: 1
@@ -6197,6 +6649,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -6377,6 +6837,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: KaiserReich
       value: 1
@@ -6392,6 +6856,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -6496,6 +6968,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: KaiserReich
       value: 0
@@ -6515,6 +6991,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -6619,8 +7103,16 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Repablic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: Republic
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
@@ -6638,6 +7130,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -6742,6 +7242,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: KaiserReich
       value: 0
@@ -6761,6 +7265,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -6883,6 +7395,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Outlaw
       value: 1
@@ -6894,6 +7410,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -6986,6 +7510,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: KaiserReich
       value: 1
@@ -7001,6 +7529,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -7294,6 +7830,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: KaiserReich
       value: 0
@@ -7313,6 +7853,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -7342,11 +7890,23 @@ PrefabInstance:
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: patrolSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
       objectReference: {fileID: 78298937}
     - target: {fileID: 1164178098639277875, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
       propertyPath: Repablic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164178098639277875, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: Republic
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1164178098639277875, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
@@ -7419,6 +7979,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5594353316627339938, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
       propertyPath: Hit
+      value: 
+      objectReference: {fileID: 1912141385}
+    - target: {fileID: 5594353316627339938, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: audioSource
       value: 
       objectReference: {fileID: 1912141385}
     - target: {fileID: 7455111500680317384, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
@@ -7524,6 +8088,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: KaiserReich
       value: 0
@@ -7543,6 +8111,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -7852,6 +8428,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: KaiserReich
       value: 0
@@ -7871,6 +8451,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -7975,6 +8563,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: KaiserReich
       value: 0
@@ -7994,6 +8586,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -8115,6 +8715,14 @@ PrefabInstance:
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: patrolSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 796189154416483252, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
       objectReference: {fileID: 78298937}
@@ -8176,6 +8784,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5594353316627339938, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
       propertyPath: Hit
+      value: 
+      objectReference: {fileID: 1912141385}
+    - target: {fileID: 5594353316627339938, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
+      propertyPath: audioSource
       value: 
       objectReference: {fileID: 1912141385}
     - target: {fileID: 7455111500680317384, guid: 09ad37edc11314e46aa8a1da80e46e54, type: 3}
@@ -8264,6 +8876,10 @@ PrefabInstance:
       propertyPath: Hit
       value: 
       objectReference: {fileID: 1912141385}
+    - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1912141385}
     - target: {fileID: 6414411664523354605, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: KaiserReich
       value: 1
@@ -8283,6 +8899,14 @@ PrefabInstance:
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: sixthSense
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: patrolSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.data[0]

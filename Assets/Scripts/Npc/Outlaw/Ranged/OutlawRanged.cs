@@ -58,8 +58,6 @@ public class OutlawRanged : Outlaw
         {
             Collider2D[] coverColliders = Physics2D.OverlapCircleAll(transform.position, CoverRange, whatIsCover);
 
-            Debug.Log("Search for Cover");
-
             if (coverColliders.Length > 0)
             {
                 // Find the closest cover

@@ -10,7 +10,7 @@ public class EnemyHealth : MonoBehaviour
     public GameObject Remains;
 
     [Header("Audio")]
-    public AudioSource Hit;
+    public AudioSource audioSource;
     public AudioClip hit;
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void DamageAi(float damage)
     {
-        Hit.PlayOneShot(hit);
+        audioSource.PlayOneShot(hit);
         currentHp -= damage;
         if (currentHp <= 0)
         {

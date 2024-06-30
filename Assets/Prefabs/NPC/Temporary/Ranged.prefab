@@ -189,7 +189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npc: {fileID: 796189154416483252}
   Outlaw: 0
-  Repablic: 0
+  Republic: 0
   KaiserReich: 0
   Commonwealth: 0
   AliedToPlayer: 0
@@ -252,23 +252,17 @@ MonoBehaviour:
     m_Bits: 29696
   currentOpinionState: 2
   currentState: 0
-  WhatToSee:
-    serializedVersion: 2
-    m_Bits: 30208
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 29696
   detectedEnemies: []
   currentTarget: {fileID: 0}
   detectionRange: 40
   sixthSense: 60
   AggressionRange: 10
+  needToSee: 0
   PerfomanceMaxTime: 1
   AssumingTime: 3
   SearchingTime: 10
-  waypoints:
-  - {fileID: 0}
-  patrolSpeed: 8
+  waypoints: []
+  patrolSpeed: 3
   RandomWalkPoint: 10
   walkPoint: {x: 0, y: 0}
   LastPoint: {x: 0, y: 0}
@@ -303,7 +297,7 @@ MonoBehaviour:
   currentHp: 0
   blood: {fileID: 7903134918916027298}
   Remains: {fileID: 8215103062528791934, guid: bd63ebdcd32b4e040a259f69122ab68c, type: 3}
-  Hit: {fileID: 388143177963967688}
+  audioSource: {fileID: 388143177963967688}
   hit: {fileID: 8300000, guid: 91dd853bd45d67e4a9aa3cba56a0c4f9, type: 3}
 --- !u!82 &388143177963967688
 AudioSource:
@@ -317,7 +311,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.6
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0

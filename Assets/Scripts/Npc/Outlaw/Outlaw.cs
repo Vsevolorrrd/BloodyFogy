@@ -10,7 +10,6 @@ public class Outlaw : NPC
     public float detectionRange = 18f;
 
     public float sixthSense = 40f;
-    public float AggressionRange = 10f;
 
     [Header("Need to see?")]// For optimization
     public bool needToSee;
@@ -84,10 +83,12 @@ public class Outlaw : NPC
 
     public virtual void HandlePatroulState()
     {
-        // Example condition to switch to Chase state
-        if (CanSeeTheEnemy())
+        if (detectedEnemies.Count != 0)
         {
-            currentState = State.Combat;
+            if (CanSeeTheEnemy())
+            {
+                currentState = State.Combat;
+            }
         }
         Patrol();
     }
@@ -122,7 +123,6 @@ public class Outlaw : NPC
 
     public virtual void HandleCombatState()
     {
-        // Example condition to switch back to Chase state
         if (!CanSeeTheEnemy())
         {
             AssumingTimer -= Time.deltaTime;
@@ -144,7 +144,7 @@ public class Outlaw : NPC
     }
     public virtual bool CanSeeTheEnemy()
     {
-        if (needToSee) return true;
+        if (!needToSee && detectedEnemies.Count != 0) return true;
         if (detectedEnemies.Count == 0) return false;
 
         foreach (Transform enemy in detectedEnemies)
@@ -280,8 +280,6 @@ public class Outlaw : NPC
     }
     void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, AggressionRange);
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, detectionRange);
     }
