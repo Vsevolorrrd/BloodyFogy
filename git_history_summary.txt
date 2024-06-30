@@ -1,0 +1,21 @@
+* 2efcdf1 (HEAD -> Perfomance, origin/Perfomance) Final version
+* 935ca7c Finnishing optimization
+* 96d10b3 (tag: perfomance-tag) Optimising AI
+* 27d9f45 (origin/AI-patroul-state, NewMain) Quality of life
+* 533b9d9 Stoping suicides
+* 8a03c61 Sounds
+* 808fcbf fixes
+| *   0170572 (origin/main, origin/HEAD, main, AI-search-state) Merge branch 'AI-patroul-state'
+| |\  
+| | * 0660ee0 Revert "Search State"
+| | * 78cdfc6 Revert "Arena"
+| |/  
+|/|   
+| * 42b394c Revert "Search State"
+|/  
+* 19bea49 Arena
+* 4814779 Search State
+* 4c48d01 Added Rotation
+* 513664e Added a rough patroul system
+* 8adb7fa Initial commit of unity project
+* 5b64366 Initial commit
