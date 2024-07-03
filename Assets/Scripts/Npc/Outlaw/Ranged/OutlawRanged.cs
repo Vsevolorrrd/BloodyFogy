@@ -23,6 +23,7 @@ public class OutlawRanged : Outlaw
     void Start()
     {
         player = PlayerManager.instance.player.transform;
+        nextShootTime = timeBetweenShots;
     }
     public override void Update()
     {

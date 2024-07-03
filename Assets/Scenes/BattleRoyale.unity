@@ -264,7 +264,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1591087226435707272, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: m_Name
-      value: EnemyMelee (3)
+      value: EnemyMeleeHero
       objectReference: {fileID: 0}
     - target: {fileID: 3437856451077287053, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -320,7 +320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: HP
-      value: 150
+      value: 550
       objectReference: {fileID: 0}
     - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Hit
@@ -344,7 +344,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: patrolSpeed
-      value: 8
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: timeToThink
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.size
@@ -2272,7 +2276,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: patrolSpeed
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.size
@@ -5742,7 +5746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1591087226435707272, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: m_Name
-      value: EnemyMelee (8)
+      value: EnemyMeleeHero
       objectReference: {fileID: 0}
     - target: {fileID: 1591087226435707272, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: m_Layer
@@ -5810,7 +5814,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: HP
-      value: 150
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Hit
@@ -5846,7 +5850,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: patrolSpeed
-      value: 8
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: timeToThink
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.size
@@ -6000,7 +6008,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1591087226435707272, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: m_Name
-      value: EnemyMelee (4)
+      value: EnemyMeleeHero
       objectReference: {fileID: 0}
     - target: {fileID: 1591087226435707272, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: m_Layer
@@ -6068,7 +6076,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: HP
-      value: 150
+      value: 550
       objectReference: {fileID: 0}
     - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Hit
@@ -6100,7 +6108,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: patrolSpeed
-      value: 8
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: timeToThink
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.size
@@ -8870,7 +8882,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: HP
-      value: 150
+      value: 550
       objectReference: {fileID: 0}
     - target: {fileID: 4701461519535027206, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: Hit
@@ -8902,7 +8914,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: patrolSpeed
-      value: 8
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
+      propertyPath: timeToThink
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8715537406269088111, guid: 74880c48eeb288b4bb8ad255f5dbcb6a, type: 3}
       propertyPath: waypoints.Array.size
